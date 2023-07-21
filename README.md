@@ -16,7 +16,7 @@ To add a dependency on JElf using Maven, use the following:
 <dependency>
     <groupId>net.fornwall</groupId>
     <artifactId>jelf</artifactId>
-    <version>0.4.5</version>
+    <version>0.8.0</version>
 </dependency>
 ```
 
@@ -24,9 +24,12 @@ To add a dependency using Gradle:
 
 ```gradle
 dependencies {
-    implementation 'net.fornwall:jelf:0.4.5'
+    implementation 'net.fornwall:jelf:0.8.0'
 }
 ```
+
+## Using JElf
+See the [ElfFile](https://www.javadoc.io/doc/net.fornwall/jelf/latest/net/fornwall/jelf/ElfFile.html) class for how to parse and query an ELF file.
 
 ## ELF Resources
 - [Wikipedia entry on the ELF format](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format)

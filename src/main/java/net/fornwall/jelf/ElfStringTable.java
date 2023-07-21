@@ -1,7 +1,5 @@
 package net.fornwall.jelf;
 
-import java.io.IOException;
-
 /**
  * String table sections hold null-terminated character sequences, commonly called strings.
  *
@@ -17,7 +15,7 @@ final public class ElfStringTable extends ElfSection {
 
 	/** Reads all the strings from [offset, length]. */
 	ElfStringTable(ElfParser parser, long offset, int length, ElfSectionHeader header) throws ElfException {
-		super(header);
+		super(parser, header);
 
 		parser.seek(offset);
 		data = new byte[length];
